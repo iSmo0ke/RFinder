@@ -29,7 +29,7 @@
             
             <div class="buttons">
                 <div class="links">
-                    <a href="./views//registro.php" class="choose">Registrate</a>
+                    <a href="./views/registro.php" class="choose">Registrate</a>
                 </div>
                 <div class="links2">
                     <a href="./views/mapa.php" class="choose1" >Continuar sin registro</a>
@@ -85,7 +85,7 @@
         <div class="options">
             <a href="./index.php" class="stylebutton1">Inicio</a>
             <a href="" class="stylebutton1">Comentarios</a>
-            <a href="./login-routefinder.html" class="stylebutton1">Entrar</a>
+            <a href="./views/mapa.php" class="stylebutton1">Entrar</a>
         </div>
 
 

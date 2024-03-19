@@ -1,15 +1,85 @@
 <?php 
     include './includes/header.php';
-; ?>
+?>
+
+<!-- index.php -->
 
 <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Route Finder</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+   
+    <style>
+        /* Estilos para el contenedor principal */
+        .container {
+            background-image: url('/RF-PHP/img/index.jpg'); /* Ruta a tu imagen de fondo */
+            background-size: 100% 100%; /* Ajusta la imagen para que ocupe el 100% del ancho y alto del contenedor */
+            background-position: center; /* Centra la imagen */
+            height: 100vh; /* Ajusta la altura al 100% del viewport */
+            width: 100%; /* Ajusta el ancho al 100% */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="text-center">
+        <h1>Bienvenido a mi página con imagen de fondo</h1>
+    </div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <title>ROUTE FINDER</title>
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="Icon" type="png" href='img/RF ico.png'>
+    <link rel="Icon" type="png" href='/RF-PHP/img/index.jpg'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width,initial-scale=1" />
 </head>
 
@@ -44,10 +114,31 @@
 
     </div>
 
-</body>
+</body> -->
 
-<<<<<<< HEAD
-</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- </html>
 =======
                 <article class="card">
                     <i class="far fa-object-group"></i>
@@ -83,5 +174,4 @@
 
 
     </body>
-</html>
->>>>>>> 3b992b919e45c1d00e16a0ea8964d67acddf8bb4
+</html> -->

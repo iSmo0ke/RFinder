@@ -11,20 +11,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Route Finder</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-   
+    <link rel="Icon" type="png" href='/RF-PHP/img/icono.jpg'>
     <style>
-        /* Estilos para el contenedor principal */
-        .container {
-            background-image: url('/RF-PHP/img/index.jpg'); /* Ruta a tu imagen de fondo */
-            background-size: 100% 100%; /* Ajusta la imagen para que ocupe el 100% del ancho y alto del contenedor */
-            background-position: center; /* Centra la imagen */
-            height: 100vh; /* Ajusta la altura al 100% del viewport */
-            width: 100%; /* Ajusta el ancho al 100% */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+    /* Estilos para el contenedor principal */
+    .container {
+        background-image: url('/RF-PHP/img/index.jpg');
+        background-size: 100% 100%;
+        background-position: 0%;
+        height: 100vh; /* Altura igual al 100% de la ventana gráfica */
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        border: 0;
+    }
     </style>
+
 </head>
 <body>
 

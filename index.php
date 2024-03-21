@@ -1,141 +1,87 @@
-<?php 
-    include './includes/header.php';
+<?php
+include './includes/header.php';
 ?>
 
 <!-- index.php -->
 
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Route Finder</title>
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="Icon" type="png" href='/RF-PHP/img/icono.jpg'>
+    <link rel="Icon" type="png" href='/RF-PHP/assets/img/icono.jpg'>
     <style>
-    /* Estilos para el contenedor principal */
-    .container {
-        background-image: url('/RF-PHP/img/index.jpg');
-        background-size: 100% 100%;
-        background-position: 0%;
-        height: 100vh; /* Altura igual al 100% de la ventana gráfica */
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        padding: 0;
-        margin: 0;
-        border: 0;
-    }
+        /* Estilos para el contenedor principal */
+        .container{
+            background-image: url('/RF-PHP/assets/img/index.jpg');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment:fixed;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            margin: 0%;
+            width: 100%;
+            max-width: 1550px;
+            height: 100%;
+            padding: 0;
+        }
     </style>
 
 </head>
-<body>
-
-<div class="container">
-    <div class="text-center">
-        <h1>Bienvenido a mi página con imagen de fondo</h1>
-    </div>
-</div>
-
-</body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <title>ROUTE FINDER</title>
-    <link rel="Icon" type="png" href='/RF-PHP/img/index.jpg'>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-</head>
 
 <body>
+
     <div class="container">
-        <div class="right">
-
-            <div class="title">
-                <h1 class="bold">ROUTE </h1>
-                <h1 class="slim">FINDER</h1>
-            </div>
-
-            <div class="text-cuadro">
-                <p class="text">Proporciona soluciones de
-                    localización facilitando los
-                    desplazamientos diarios de las
-                    personas que usan transporte
-                    público por la ciudad a través de una
-                    plataforma tecnológica innovadora y accesible.
+        <div>
+            <h1 class="titulo">Route Finder</h1>
+            <div class="descripcionTxt">
+                <p class="texto"> Proporciona soluciones de localización facilitando los
+                    localización facilitando los desplazamientos diarios de
+                    las personas que usan transporte público por la ciudad
+                    a través de una plataforma tecnológica innovadora y accesible.
                 </p>
             </div>
-
-            <div class="buttons">
-                <div class="links">
-                    <a href="./views/registro.php" class="choose">Registrate</a>
-                </div>
-                <div class="links2">
-                    <a href="./views/mapa.php" class="choose1">Continuar sin registro</a>
-                </div>
-            </div>
         </div>
-
     </div>
 
-</body> -->
+    <div class="container">
+        <section class="cardsContenedor">
+            <h2>¿Como Funciona?</h2>
+            <div>
+                <article class="fichaTxt">         
+                    <h3>Encuentra tu destino</h3>
+                    <br>
+                    <br>
+                    <p>Por medio de una barra de busqueda, podrás ingresar al lugar que vas.</p>
+                </article>
+                <article class="fichaTxt">                
+                    <h3>Visualiza el trayecto de la ruta</h3>
+                    <br>
+                    <p>Mediante un mapa, se mostrara el trayecto que recorre el transporte.</p>
+                </article>
+                <article class="fichaTxt">
+                    <h3>Elige tu mejor opción</h3>
+                    <br>
+                    <br>
+                    <p>Escoge la ruta que te sea mas accesible al momento y empieza a ver su recorrido</p>
+                </article>
+            </div>
+        </section>
+    </div>
 
+</body>
 
+</html>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<?php
+include './includes/footer.php';
+?>
 
 
 
@@ -143,15 +89,7 @@
 
 <!-- </html>
 =======
-                <article class="card">
-                    <i class="far fa-object-group"></i>
-                    <h3>Elige tu mejor opción</h3>
-                    <br>
-                    <br>
-                    <p>Escoge la ruta que te sea mas accesible al momento y empieza a ver su recorrido</p>
-                </article> 
-            </div>
-        </section>
+                
 
         <footer id="contacto">
             <div class="contenedor">

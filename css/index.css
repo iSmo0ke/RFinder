@@ -1,0 +1,52 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.descripcionTxt{
+    padding: 0;
+    width: 550px;
+    height: 180px;
+    text-align: start;
+}
+
+.fichaTxt{
+    background-color: #ffff;
+    border: 2px solid black;
+    border-radius: 5px; 
+    width: 350px;
+    height: 180px;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    display:inline-table;
+    justify-content: center;
+    margin: 4%;
+}
+
+.titulo{
+    font-size: 100px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 30%;
+}
+
+
+.subTitulo{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.texto{
+    font-size: 20px;
+    font-family: 'RobotoSub', sans-serif;
+
+}
+
+.cardsContenedor{
+    background-color: #ffff;
+    padding: 0;
+    width: 1950px;
+    height:100%;
+    text-align: center;
+    margin-top: 7%;
+}
+

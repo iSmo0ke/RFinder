@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Navbar</title>
-  <link rel="Icon" type="png" href='/RF-PHP/img/icono.jpg'>
+  <link rel="Icon" type="png" href='/RF-PHP/assets/img/icono.jpg'>
+  <link rel="stylesheet" href="./css/fonts.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
   <style>
     .navbar-brand img {
@@ -18,7 +19,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">
-    <img src="/RF-PHP/img/logo.jpg" alt="Logo">
+    <img src="/RF-PHP/assets/img/logo.jpg" alt="Logo">
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>

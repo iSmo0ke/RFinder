@@ -1,14 +1,14 @@
-<link rel="Icon" type="png" href='/RF-PHP/assets/img/icono.jpg'>
+<link rel="Icon" type="png" href='/RF-PHP/public/assets/img/icono.jpg'>
 
 <header>
-<?php
-include '../includes/header.php';
-?>
+    <?php
+    include '../includes/header.php';
+    ?>
 </header>
 <!-- comment_form.php -->
 
 <div class="m-5">
-    <form class="col-md-4" action="submit_comment.php" method="post">
+    <form class="col-md-4" id="commentForm">
         <div class="form-group">
             <label for="name">Nombre:</label>
             <input type="text" class="form-control" id="name" name="name" required>
@@ -26,8 +26,8 @@ include '../includes/header.php';
 </div>
 
 <footer>
-    
-<?php
-include '../includes/footer.php';
-?>
+
+    <?php
+    include '../includes/footer.php';
+    ?>
 </footer>

@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Route Finder</title>
     <link rel="stylesheet" href="../css/maps2.css">
-    <link rel="stylesheet" href="../css/fontello.css">
+    <link rel="stylesheet" href="../css/fonts.css">
     <link rel="Icon" type="png" href='img/ico.jpg'>
     <script src="Busqueda.php"></script>
 </head> 

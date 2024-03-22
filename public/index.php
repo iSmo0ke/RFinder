@@ -17,11 +17,11 @@ include './includes/header.php';
     <link rel="Icon" type="png" href='/RF-PHP/assets/img/icono.jpg'>
     <style>
         /* Estilos para el contenedor principal */
-        .container{
-            background-image: url('/RF-PHP/assets/img/index.jpg');
+        .container {
+            background-image: url('/RF-PHP/public/assets/img/index.jpg');
             background-repeat: no-repeat;
             background-position: center center;
-            background-attachment:fixed;
+            background-attachment: fixed;
             background-size: cover;
             display: flex;
             align-items: center;
@@ -30,6 +30,16 @@ include './includes/header.php';
             max-width: 1550px;
             height: 100%;
             padding: 0;
+        }
+
+        footer {
+            box-sizing: border-box;
+            /* Añade esta línea */
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
         }
     </style>
 
@@ -54,13 +64,13 @@ include './includes/header.php';
         <section class="cardsContenedor">
             <h2>¿Como Funciona?</h2>
             <div>
-                <article class="fichaTxt">         
+                <article class="fichaTxt">
                     <h3>Encuentra tu destino</h3>
                     <br>
                     <br>
                     <p>Por medio de una barra de busqueda, podrás ingresar al lugar que vas.</p>
                 </article>
-                <article class="fichaTxt">                
+                <article class="fichaTxt">
                     <h3>Visualiza el trayecto de la ruta</h3>
                     <br>
                     <p>Mediante un mapa, se mostrara el trayecto que recorre el transporte.</p>
@@ -74,7 +84,6 @@ include './includes/header.php';
             </div>
         </section>
     </div>
-
 </body>
 
 </html>
@@ -82,37 +91,3 @@ include './includes/header.php';
 <?php
 include './includes/footer.php';
 ?>
-
-
-
-
-
-<!-- </html>
-=======
-                
-
-        <footer id="contacto">
-            <div class="contenedor">
-                <h2 class="titulo">Comentarios</h2>
-                <form action="" class="form">
-                    <input class="input"  type="text" name="" id="" placeholder="Nombre">
-                    <input class="input"  type="email" name="" id="" placeholder="Email">
-                    <textarea  class="input" name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <input class="input"  type="submit" value="Enviar">
-                </form>
-            </div>
-        </footer>
-
-
-
-
-        <div class="options">
-            <a href="./index.php" class="stylebutton1">Inicio</a>
-            <a href="" class="stylebutton1">Comentarios</a>
-            <a href="./views/mapa.php" class="stylebutton1">Entrar</a>
-        </div>
-
-
-
-    </body>
-</html> -->

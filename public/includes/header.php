@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Navbar</title>
-  <link rel="Icon" type="png" href='/RF-PHP/assets/img/icono.jpg'>
+  <link rel="Icon" type="png" href='/RF-PHP/public/assets/img/icono.jpg'>
   <link rel="stylesheet" href="./css/fonts.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
   <style>
@@ -17,29 +17,29 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
   <a class="navbar-brand" href="../index.php">
-    <img src="/RF-PHP/assets/img/logo.jpg" alt="Logo">
+    <img src="/RF-PHP/public/assets/img/logo.jpg" alt="Logo">
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
+  <div class="navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="/RF-PHP/index.php">Inicio</a>
+        <a class="nav-link text-white" href="/RF-PHP/public/index.php">Inicio</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/RF-PHP/views/registro.php">Registro</a>
+        <a class="nav-link text-white" href="/RF-PHP/public/views/registro.php">Registro</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/RF-PHP/views/login.php">Inicio de Sesión</a>
+        <a class="nav-link text-white" href="/RF-PHP/public/views/login.php">Inicio de Sesión</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/RF-PHP/views/mapa.php">Rutas</a>
+        <a class="nav-link text-white" href="/RF-PHP/public/views/mapa.php">Rutas</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/RF-PHP/views/acount.php">Mi Cuenta</a>
+        <a class="nav-link text-white" href="/RF-PHP/public/views/acount.php">Mi Cuenta</a>
       </li>
     </ul>
   </div>

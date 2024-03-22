@@ -1,5 +1,5 @@
 <?php 
-    include './includes/header.php';
+    include '../includes/header.php';
 ?>
 
 <!DOCTYPE html>
@@ -83,3 +83,7 @@
   </div>
   </body>
 </html>
+
+<?php
+include '../includes/footer.php';
+?>

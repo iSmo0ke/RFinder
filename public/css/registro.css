@@ -1,11 +1,19 @@
 .contdos {
-    border:black;
+    background-image: url('/RF-PHP/public/assets/img/registro.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment:fixed;
+    background-size:contain;
+    background-attachment: scroll;
+}
+
+.formulario{
     padding-top: 10%;
     font-size: large;
     background-position-x: center;
     width: 19%;
-    margin-top: -7%;
-    margin-left: 15%;
+    margin-top: -10%;
+    margin-left: 18%;
 }
 
 .espacio1{

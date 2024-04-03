@@ -20,10 +20,6 @@ include '../includes/header.php';
       apiKey: "AIzaSyDRplYQcLl5p6G1fW4IBAwbWgYKMnri9eM",
       authDomain: "route-finder-75a0b.firebaseapp.com",
       projectId: "route-finder-75a0b",
-      storageBucket: "route-finder-75a0b.appspot.com",
-      messagingSenderId: "833216771763",
-      appId: "1:833216771763:web:cbaec2a9392817195222c6",
-      measurementId: "G-HMMHJH8PPC"
     };
     firebase.initializeApp(firebaseConfig);
     const db = firebase.firestore();
@@ -45,68 +41,67 @@ include '../includes/header.php';
     }
   </script>
 
-<style>
-        /* Estilos para el contenedor principal */
-        .container {
-            background-image: url('/RF-PHP/public/assets/img/registro.jpg');
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-attachment: fixed;
-            background-size: cover;
-            display: flex;
-            align-items: center;
-            margin: 0%;
-            width: 100%;
-            max-width: 1550px;
-            height: 100%;
-            padding: 0;
-        }
+  <style>
+    /* Estilos para el contenedor principal */
+    .container {
+      display: flex;
+      align-items: center;
+      margin: 0%;
+      width: 100%;
+      max-width: 1550px;
+      height: 100%;
+      padding: 0;
+    }
 
-        footer {
-            box-sizing: border-box;
-            /* Añade esta línea */
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-            width: 100%;
-        }
-    </style>
+    footer {
+      box-sizing: border-box;
+      /* Añade esta línea */
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      width: 100%;
+    }
+  </style>
 </head>
+
 <body class="container">
   <div class="contdos">
-    <h2 class="titulo">Crea tu cuenta</h2>
-    <form onsubmit="registrarUsuario(event)">
-      <div>
-        <input type="text" id="nombre" placeholder="Nombre" class="espacio1">
+    <div class="formulario">
+      <h2 class="titulo">Crea tu cuenta</h2>
+      <form onsubmit="registrarUsuario(event)">
+        <div>
+          <input type="text" id="nombre" placeholder="Nombre" class="espacio1">
+          <br>
+        </div>
+        <div>
+          <label for=""></label>
+          <input type="email" id="email" placeholder="Correo electronico" class="espacio1"> <br>
+          <br>
+        </div>
+        <div>
+          <input placeholder="Contraseña" type="password" name="password" id="password" class="espacio1">
+          <br>
+        </div>
         <br>
-      </div>
-      <div>
-        <label for=""></label>
-        <input type="email" id="email" placeholder="Correo electronico" class="espacio1"> <br>
+        <div>
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox-custom">
+            <font color="023246">Recordarme</font>
+          </label>
+        </div>
         <br>
-      </div>
-      <div>
-        <input placeholder="Contraseña" type="password" name="password" id="password" class="espacio1">
         <br>
-      </div>
-      <br>
-      <div>
-        <label class="checkbox-label">
-          <input type="checkbox" class="checkbox-custom">
-          <font color="023246">Recordarme</font>
-        </label>
-      </div>
-      <br>
-      <br>
-      <div>
-    </form>
-    <button name="login" btn-lg class="stylebuttom" onclick="guardar()">
-      Entrar
-    </button>
-  </div>
+        <div>
+      </form>
+      <button name="login" btn-lg class="stylebuttom" onclick="guardar()">
+        Entrar
+      </button>
+
+    </div>
   </div>
 </body>
+
 </html>
 
 <?php

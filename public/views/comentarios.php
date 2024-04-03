@@ -8,7 +8,7 @@
 <!-- comment_form.php -->
 
 <div class="m-5">
-    <form class="col-md-4" id="commentForm">
+    <form class="col-md-4" id="comentarioForm">
         <div class="form-group">
             <label for="name">Nombre:</label>
             <input type="text" class="form-control" id="name" name="name" required>
@@ -31,3 +31,5 @@
     include '../includes/footer.php';
     ?>
 </footer>
+
+<script type="module" src="../../controllers/firebaseconect.js"></script>

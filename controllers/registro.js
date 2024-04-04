@@ -6,7 +6,7 @@ function guardar(){
     })
     .then((docRef) => {
         alert ("Registro Exitoso");
-        window.location.href="../public/views/mapa.php"
+        window.location.href="../views/mapa.php"
     })
     .catch((error) => {
         alert ("Error en el registro");

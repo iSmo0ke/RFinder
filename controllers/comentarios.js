@@ -40,10 +40,8 @@ var tabla = document.getElementById('tabla');
 db.collection("Comentarios").get().then((querySnapshot) => {
     tabla.innerHTML= '';
     querySnapshot.forEach((doc) => {
-        console.log(`${doc.id} => ${doc.data()}`);
         tabla.innerHTML += `
         <tr>
-            <th scope="row">${doc.id}</th>
             <td>${doc.data().name}</td>
             <td>${doc.data().email}</td>
             <td>${doc.data().comment}</td>

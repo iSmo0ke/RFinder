@@ -9,105 +9,58 @@ include '../includes/header.php';
   <meta charset="UTF-8">
   <title>Registro</title>
   <link rel="Icon" type="png" href='/RF-PHP/assets/img/icono.jpg'>
-  <link rel="stylesheet" href="../css/registro.css">
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/sign-in/">
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Scripts firebase -->
   <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-auth.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-firestore.js"></script>
   <script src="../../controllers/registro.js"></script>
-  <script>
-    var firebaseConfig = {
-      apiKey: "AIzaSyDRplYQcLl5p6G1fW4IBAwbWgYKMnri9eM",
-      authDomain: "route-finder-75a0b.firebaseapp.com",
-      projectId: "route-finder-75a0b",
-      storageBucket: "route-finder-75a0b.appspot.com",
-      messagingSenderId: "833216771763",
-      appId: "1:833216771763:web:cbaec2a9392817195222c6",
-      measurementId: "G-HMMHJH8PPC"
-    };
-    firebase.initializeApp(firebaseConfig);
-    const db = firebase.firestore();
-
-    function registrarUsuario(event) {
-      event.preventDefault();
-
-      var email = document.getElementById("email").value;
-      var password = document.getElementById("password").value;
-      var text = document.getElementById("nombre").value;
-
-      firebase.auth().createUserWithEmailAndPassword(email, password)
-        .then(function(userCredential) {
-          console.log("Usuario registrado:", userCredential.user);
-        })
-        .catch(function(error) {
-          console.error("Error al registrar el usuario:", error);
-        });
-    }
-  </script>
-
   <style>
-    /* Estilos para el contenedor principal */
-    .container {
-      display: flex;
-      align-items: center;
-      margin: 0%;
-      width: 100%;
-      max-width: 1550px;
-      height: 100%;
-      padding: 0;
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
     }
 
-    footer {
-      box-sizing: border-box;
-      /* Añade esta línea */
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-      width: 100%;
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
     }
   </style>
 </head>
 
-<body class="container">
-  <div class="contdos">
-    <div class="formulario">
-      <h2 class="titulo">Crea tu cuenta</h2>
-      <form onsubmit="registrarUsuario(event)">
-        <div>
-          <input type="text" id="nombre" placeholder="Nombre" class="espacio1">
-          <br>
-        </div>
-        <div>
-          <label for=""></label>
-          <input type="email" id="email" placeholder="Correo electronico" class="espacio1"> <br>
-          <br>
-        </div>
-        <div>
-          <input placeholder="Contraseña" type="password" name="password" id="password" class="espacio1">
-          <br>
-        </div>
-        <br>
-        <div>
-          <label class="checkbox-label">
-            <input type="checkbox" class="checkbox-custom">
-            <font color="023246">Recordarme</font>
-          </label>
-        </div>
-        <br>
-        <br>
-        <div>
-      </form>
-      <button name="login" btn-lg class="stylebuttom" onclick="guardar()">
-        Entrar
-      </button>
+<body class="text-center">
+  <div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+    <form onsubmit="registrarUsuario(event)" class="form-signin col-sm-5 m-5" id="registroForm">
+      <img class="mb-4" src="../assets/img/RF-IMG.jpg" alt="" width="150" height="150">
+      <h1 class="h3 mb-3 font-weight-normal">Crea una cuenta nueva!</h1>
 
-    </div>
+      <label for="inputEmail" class="sr-only">Correo electronico</label>
+      <input type="email" id="email" class="form-control" placeholder="Correo electronico" required autofocus>
+
+      <label for="inputPassword" class="sr-only">Contraseña</label>
+      <input type="password" id="password" class="form-control" placeholder="Contraseña" required>
+
+      <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me"> Recordar
+        </label>
+      </div>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Registrarse</button>
+    </form>
   </div>
+
+
+  <?php
+  include '../includes/footer.php';
+  ?>
+
 </body>
 
 </html>
-
-<?php
-include '../includes/footer.php';
-?>

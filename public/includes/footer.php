@@ -9,36 +9,17 @@
 </head>
 
 <body>
-    <div class="footercss">
-        <footer class="footer bg-dark">
-            <div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <h5>Información de contacto</h5>
-                        <p>Correo electrónico: contacto@tudominio.com</p>
-                        <p>Teléfono: +52 2381699563</p>
-                    </div>
-                    <div class="col-md-4">
-                        <h5>Enlaces útiles</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="#">Términos y condiciones</a></li>
-                            <li><a href="#">Política de privacidad</a></li>
-                            <li><a href="#">Aviso legal</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-                        <h5>Tus comentarios son importantes</h5>
-                        <ul class="list-unstyled">
-                            <li><a href='./views/comentarios.php'>Dejar comentario</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <hr>
-                <p class="text-center">&copy; <?php echo date("d/m/Y"); ?> Route Finder</p>
-            </div>
-        </footer>
+    <div class="card text-center bg-dark">
+        <div class="card-header text-white">Contacto</div>
+        <div class="card-body">
+            <h5 class="card-title text-white">routefinderutechnologies506@gmail.com</h5>
+            <p class="card-text text-white">Tus comentarios son importantes!</p>
+            <a href='/RF-PHP/public/views/comentarios.php' class="btn btn-primary text-white">Agregar comentario</a>
+        </div>
+        <div class="card-footer text-muted text-white">
+        <p class="text-center text-white">&copy; <?php echo date("d/m/Y"); ?> Route Finder</p>
+        </div>
     </div>
-
 </body>
 
 </html>

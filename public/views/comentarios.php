@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comentarios</title>
+    <script src="../../controllers/login.js"></script>
 </head>
 <header>
     <?php

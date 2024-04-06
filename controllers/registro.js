@@ -12,8 +12,8 @@ firebase.initializeApp(firebaseConfig);
 function registrarUsuario(event) {
     event.preventDefault();
 
-    var email = document.getElementById("email").value;
-    var password = document.getElementById("password").value;
+    var email = document.getElementById("registro-email").value;
+    var password = document.getElementById("registro-password").value;
 
     firebase.auth().createUserWithEmailAndPassword(email, password)
         .then(function (userCredential) {

@@ -12,10 +12,6 @@ include '../includes/header.php';
   <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/sign-in/">
   <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Scripts firebase -->
-  <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-auth.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-firestore.js"></script>
   <script src="../../controllers/registro.js"></script>
   <style>
     .bd-placeholder-img {
@@ -42,10 +38,10 @@ include '../includes/header.php';
       <h1 class="h3 mb-3 font-weight-normal">Crea una cuenta nueva!</h1>
 
       <label for="inputEmail" class="sr-only">Correo electronico</label>
-      <input type="email" id="email" class="form-control" placeholder="Correo electronico" required autofocus>
+      <input type="email" id="registro-email" class="form-control" placeholder="Correo electronico" required autofocus>
 
       <label for="inputPassword" class="sr-only">Contraseña</label>
-      <input type="password" id="password" class="form-control" placeholder="Contraseña" required>
+      <input type="password" id="registro-password" class="form-control" placeholder="Contraseña" required>
 
       <div class="checkbox mb-3">
         <label>

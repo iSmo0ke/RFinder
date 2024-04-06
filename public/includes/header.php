@@ -44,7 +44,7 @@
           <a class="nav-link text-white" href="/RF-PHP/public/views/mapa.php">Rutas</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="">Cerrar Sesion</a>
+          <a class="nav-link text-white" href='/RF-PHP/public/views/miCuenta.php'>Mi cuenta</a>
         </li>
       </ul>
     </div>

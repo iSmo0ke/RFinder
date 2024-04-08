@@ -9,6 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Route Finder</title>
     <link rel="Icon" type="png" href='img/ico.jpg'>
+    <script src='/RF-PHP/controllers/auth.js'></script>
+    <script>verificarAutenticacion();</script>
     <!-- Agregar Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
@@ -18,7 +20,7 @@
     </style>
 </head> 
 <body>
-    <div class="container-fluid m-5">
+    <div class="container-fluid m-0">
         <!-- Botones para cambiar el mapa -->
         <div class="row mb-3">
             <div class="col">
@@ -29,6 +31,9 @@
             </div>
             <div class="col">
                 <button class="btn btn-primary btn-block" onclick="cambiarMapa('mapa3')">Mapa 3</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-primary btn-block" id="downloadButton">Descarga nuestra app movil</button>
             </div>
         </div>
         <!-- Contenedor del mapa -->
@@ -41,7 +46,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
     <script>
         // Función para cambiar el mapa en el iframe
         function cambiarMapa(mapaId) {
@@ -61,6 +65,11 @@
                     break;
             }
         }
+    </script>
+    <script>
+        document.getElementById('downloadButton').addEventListener('click', function() {
+            window.location.href = '/RF-PHP/Route Finder.apk';
+        });
     </script>
 
     <?php

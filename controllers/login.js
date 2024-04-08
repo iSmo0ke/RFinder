@@ -19,7 +19,7 @@ function iniciarSesion(event) {
         .then(function (userCredential) {
             alert("Inicio de sesión exitoso");
             document.getElementById("loginForm").reset();
-            // window.location.href = '/RF-PHP/public/views/mapa.php';
+            window.location.href='/RF-PHP/public/views/mapa.php'
         })
         .catch(function (error) {
             alert("El correo o contaseña no coinciden");

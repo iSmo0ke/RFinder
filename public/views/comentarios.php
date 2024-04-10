@@ -14,42 +14,44 @@
 </header>
 
 <body>
-    <div class="row m-0">
-        <!-- Columna del formulario -->
-        <div class="col-sm-5 m-0">
-            <h2>Deja un comentario</h2>
-            <form onsubmit="registrarComentario(event)" id="comentarioForm">
-                <div class="form-group">
-                    <label for="name">Nombre:</label>
-                    <input type="text" class="form-control" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Correo electrónico:</label>
-                    <input type="email" class="form-control" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="comment">Comentario:</label>
-                    <textarea class="form-control" id="comment" name="comment" rows="3" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Enviar comentario</button>
-            </form>
-        </div>
-        <!-- Columna de los comentarios -->
-        <div class="col-md-6 m-0">
-            <h2>Comentarios</h2>
-            <div id="comentarios-container"></div>
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th scope="col">Nombre</th>
-                        <th scope="col">Correo</th>
-                        <th scope="col">Comentario</th>
-                    </tr>
-                </thead>
-                <tbody id="tabla">
-                </tbody>
-            </table>
-        </div>
+<div class="row m-0">
+    <!-- Columna del formulario -->
+    <div class="col-md-6 col-lg-5 m-0">
+        <h2>Deja un comentario</h2>
+        <form onsubmit="registrarComentario(event)" id="comentarioForm">
+            <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="comment">Comentario:</label>
+                <textarea class="form-control" id="comment" name="comment" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar comentario</button>
+        </form>
+    </div>
+    <!-- Columna de los comentarios -->
+    <div class="col-md-6 col-lg-7 m-0">
+        <h2>Comentarios</h2>
+        <div id="comentarios-container"></div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Correo</th>
+                    <th scope="col">Comentario</th>
+                </tr>
+            </thead>
+            <tbody id="tabla">
+            </tbody>
+        </table>
+    </div>
+</div>
+
 
         <footer class="col-lg-12">
             <?php

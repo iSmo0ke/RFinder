@@ -24,7 +24,7 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-dark">
     <a class="navbar-brand" href="/RF-PHP/public">
-      <img src="/RF-PHP/public/assets/img/logo.jpg" alt="Logo">
+      <img src="/RF-PHP/public/assets/img/RF-IMG.jpg" alt="Logo">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -32,13 +32,13 @@
     <div class="navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link text-white" href="/RF-PHP/public/index.php">Inicio</a>
+          <a class="nav-link text-white" href="/RF-PHP/public/index.php">Principal</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-white" href="/RF-PHP/public/views/registro.php">Registro</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="/RF-PHP/public/views/login.php">Inicio de Sesión</a>
+          <a class="nav-link text-white" href="/RF-PHP/public/views/login.php">Ingresar</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-white" href="/RF-PHP/public/views/mapa.php">Rutas</a>

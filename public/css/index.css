@@ -20,7 +20,7 @@ html{
     flex-wrap: wrap;
     display:inline-table;
     justify-content: center;
-    margin: 4%;
+    /* margin: 4%; */
 }
 
 .titulo{
@@ -38,7 +38,6 @@ html{
 .texto{
     font-size: 20px;
     font-family: 'RobotoSub', sans-serif;
-
 }
 
 .cardsContenedor{

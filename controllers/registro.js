@@ -22,6 +22,7 @@ function registrarUsuario(event) {
             window.location.href='/RF-PHP/public/views/mapa.php'
         })
         .catch(function (error) {
+            alert ("Este correo ya esta registrado");
             console.error("Error al registrar el usuario:", error);
         });
 }

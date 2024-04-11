@@ -31,9 +31,8 @@ function iniciarSesion(event) {
 //Cerrar sesion
 function cerrarSesion() {
     firebase.auth().signOut().then(function() {
-        // Sign-out successful.
+        window.location.href = '/RF-PHP/public/index.php';
         alert("Sesión cerrada exitosamente");
-        window.location.href = '/RF-PHP/public/index.php'; // Redirecciona a la página de inicio u otra página deseada
     }).catch(function(error) {
         // An error happened.
         console.error("Error al cerrar sesión:", error);

@@ -23,7 +23,7 @@ include '../includes/header.php';
 <body class="text-center">
     <div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
         <form onsubmit="iniciarSesion(event)" class="form-signin col-sm-5 m-5" id="loginForm">
-            <img class="mb-4" src="../assets/img/RF-IMG.jpg" alt="" width="150" height="150">
+            <img class="mb-4" src="../assets/img/icono.jpg" alt="" width="150" height="150">
             <h1 class="h3 mb-3 font-weight-normal">Inicia Sesion!</h1>
 
             <label for="inputEmail" class="sr-only">Correo electronico</label>

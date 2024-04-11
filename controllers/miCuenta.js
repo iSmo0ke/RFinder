@@ -1,7 +1,7 @@
 // Espera a que el DOM esté completamente cargado
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     // Registra un observador de cambio de estado de autenticación
-    firebase.auth().onAuthStateChanged(function(usuario) {
+    firebase.auth().onAuthStateChanged(function (usuario) {
         // Si hay un usuario autenticado y tiene un correo electrónico
         if (usuario && usuario.email) {
             // Obtén el elemento <h5> con el id "correoUsuario"
@@ -16,4 +16,23 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-
+// Función para enviar el correo electrónico de restablecimiento de contraseña
+function enviarCorreoRestablecerContraseña() {
+    var usuario = firebase.auth().currentUser;
+    if (usuario) {
+        var correoUsuario = usuario.email;
+        firebase.auth().sendPasswordResetEmail(correoUsuario)
+            .then(function() {
+                // Correo electrónico enviado
+                alert("Se ha enviado un correo electrónico para restablecer la contraseña.");
+            })
+            .catch(function(error) {
+                // Error al enviar el correo electrónico
+                console.error("Ocurrió un error al enviar el correo electrónico:", error);
+                alert("Ocurrió un error al enviar el correo electrónico.");
+            });
+    } else {
+        // No hay usuario autenticado
+        console.log("No hay usuario autenticado.");
+    }
+}

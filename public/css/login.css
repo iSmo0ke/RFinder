@@ -1,0 +1,8 @@
+.opacidad{
+    opacity: 0.5;
+    border: none; /* Quita el borde del botón */
+    background-color: transparent; /* Hace que el fondo del botón sea transparente */
+    padding: 0; /* Elimina el relleno del botón */
+    cursor: pointer; /* Cambia el cursor a un puntero al pasar por encima del botón */
+    font-family: inherit;
+}

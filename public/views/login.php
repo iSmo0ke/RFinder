@@ -22,7 +22,13 @@ include '../includes/header.php';
     <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-firestore.js"></script>
     <script src="../../controllers/login.js"></script>
+    <script src="../../controllers/recuperar.js"></script>
     <script src='/RF-PHP/controllers/miCuenta.js'></script>
+    <script src="/RF-PHP/controllers/authblock.js"></script> <!-- Incluye el archivo auth.js -->
+  <script>
+    // Verifica la autenticación cuando la página carga
+    verificarAutenticacionBlock();
+  </script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 </head>
@@ -47,7 +53,7 @@ include '../includes/header.php';
             </div>
             <button class="btn btn-lg btn-primary btn-block" type="submit">Iniciar Sesion</button>
             <button class="opacidad container d-flex justify-content-center align-items-center" data-toggle="modal"
-                data-target="#recuperaContraseña" type="button">¿Olvidaste tu contraseña?</button>
+    data-target="#recuperaContraseña" type="button">¿Olvidaste tu contraseña?</button>
 
         </form>
 
@@ -69,14 +75,13 @@ include '../includes/header.php';
                 <div class="modal-body">
                     <form action="">
                         <label for="inputEmail" class="sr-only">Correo electronico</label>
-                        <input type="email" id="recuperarContraseña" class="form-control"
-                            placeholder="Correo electronico" required autofocus>
+                        <input type="email" id="recuperarContraseña" class="form-control" placeholder="Correo electronico"
+                            required autofocus>
                     </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-primary" onclick="enviarCorreoRecuperacion()">Enviar correo de
-                        recuperación</button>
+                    <button type="button" class="btn btn-primary" onclick="enviarCorreoRecuperacion()">Enviar correo de recuperación</button>
                 </div>
             </div>
         </div>
@@ -86,7 +91,6 @@ include '../includes/header.php';
 
 </html>
 
-<script src="../../controllers/recuperar.js"></script>
 
 
 <?php

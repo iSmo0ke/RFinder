@@ -24,6 +24,5 @@ function registrarUsuario(event) {
         .catch(function (error) {
             alert ("Error: este correo ya esta registrado, ingresa con tu correo y contraseña");
             window.location.href='/RF-PHP/public/views/login.php'
-            console.error("Error al registrar el usuario:", error);
         });
 }

@@ -13,6 +13,11 @@ include '../includes/header.php';
   <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Scripts firebase -->
   <script src="../../controllers/registro.js"></script>
+  <script src="/RF-PHP/controllers/authblock.js"></script> <!-- Incluye el archivo auth.js -->
+  <script>
+    // Verifica la autenticación cuando la página carga
+    verificarAutenticacionBlock();
+  </script>
   <style>
     .bd-placeholder-img {
       font-size: 1.125rem;

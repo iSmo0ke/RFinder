@@ -44,8 +44,8 @@ include '../includes/header.php';
             </div>
         </div>
     </div>
-    <script src='/RF-PHP/controllers/miCuenta.js'></script>
 </body>
+<script src='/RF-PHP/controllers/recuperarMiCuenta.js'></script>
 
 </html>
 

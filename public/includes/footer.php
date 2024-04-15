@@ -14,7 +14,7 @@
         <div class="card-body">
             <h5 class="card-title text-white">routefinderutechnologies506@gmail.com</h5>
             <p class="card-text text-white">Tus comentarios son importantes!</p>
-            <a href='/RF-PHP/public/views/comentarios.php' class="btn btn-primary text-white">Agregar comentario</a>
+            <a href='/views/comentarios.php' class="btn btn-primary text-white">Agregar comentario</a>
         </div>
         <div class="card-footer text-muted text-white">
         <p class="text-center text-white">&copy; <?php echo date("d/m/Y"); ?> Route Finder</p>

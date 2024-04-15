@@ -19,7 +19,7 @@ function iniciarSesion(event) {
         .then(function (userCredential) {
             alert("Inicio de sesión exitoso");
             document.getElementById("loginForm").reset();
-            window.location.href='/RF-PHP/public/views/mapa.php'
+            window.location.href='/views/login.php'
         })
         .catch(function (error) {
             alert("El correo o contaseña no coinciden");
@@ -31,7 +31,7 @@ function iniciarSesion(event) {
 //Cerrar sesion
 function cerrarSesion() {
     firebase.auth().signOut().then(function() {
-        window.location.href = '/RF-PHP/public/index.php';
+        window.location.href = '/index.php';
         alert("Sesión cerrada exitosamente");
     }).catch(function(error) {
         // An error happened.

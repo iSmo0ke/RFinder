@@ -9,7 +9,7 @@ function verificarAutenticacion() {
         } else {
             // El usuario no está autenticado, redirigirlo a la página de inicio de sesión
             console.log("El usuario no está autenticado, redirigiendo a la página de inicio de sesión");
-            window.location.href = '/RF-PHP/public/views/login.php';
+            window.location.href = '/views/login.php';
         }
     });
 }

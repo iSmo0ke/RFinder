@@ -21,10 +21,10 @@ include '../includes/header.php';
     <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-firestore.js"></script>
-    <script src="../../controllers/login.js"></script>
-    <script src="../../controllers/recuperar.js"></script>
-    <script src='/RF-PHP/controllers/miCuenta.js'></script>
-    <script src="/RF-PHP/controllers/authblock.js"></script> <!-- Incluye el archivo auth.js -->
+    <script src="../controllers/login.js"></script>
+    <script src="../controllers/recuperar.js"></script>
+    <script src='../controllers/miCuenta.js'></script>
+    <script src="../controllers/authblock.js"></script> <!-- Incluye el archivo auth.js -->
   <script>
     // Verifica la autenticación cuando la página carga
     verificarAutenticacionBlock();

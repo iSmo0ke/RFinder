@@ -19,10 +19,10 @@ function registrarUsuario(event) {
         .then(function (userCredential) {
             alert ("Registro Exitoso");
             document.getElementById("registroForm").reset();
-            window.location.href='/RF-PHP/public/views/mapa.php'
+            window.location.href='/views/mapa.php'
         })
         .catch(function (error) {
             alert ("Error: este correo ya esta registrado, ingresa con tu correo y contraseña");
-            window.location.href='/RF-PHP/public/views/login.php'
+            window.location.href='/views/login.php'
         });
 }

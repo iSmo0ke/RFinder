@@ -15,7 +15,8 @@ function enviarCorreoRecuperacion() {
             .catch(function(error) {
                 // Error al enviar el correo electrónico
                 console.error("Ocurrió un error al enviar el correo electrónico:", error);
-                alert("Ocurrió un error al enviar el correo electrónico.");
+                alert("El correo ingresado no esta registrado, registrate en la siguiente ventana!");
+                window.location.href = '/views/registro.php';
             });
     } else {
         // El campo de correo electrónico está vacío

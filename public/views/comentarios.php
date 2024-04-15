@@ -10,7 +10,7 @@
     <!-- CSS personalizado -->
     <link rel="stylesheet" href="../css/comentarios.css">
     <!-- Icono -->
-    <link rel="Icon" type="png" href='/RF-PHP/public/assets/img/icono.jpg'>
+    <link rel="Icon" type="png" href='/assets/img/icono.jpg'>
 </head>
 
 <body>
@@ -72,7 +72,7 @@
     <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-firestore.js"></script>
     <!-- Controlador de comentarios -->
-    <script src="../../controllers/comentarios.js"></script>
+    <script src="../controllers/comentarios.js"></script>
 </body>
 
 </html>

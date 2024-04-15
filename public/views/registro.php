@@ -8,12 +8,12 @@ include '../includes/header.php';
 <head>
   <meta charset="UTF-8">
   <title>Registro</title>
-  <link rel="Icon" type="png" href='/RF-PHP/assets/img/icono.jpg'>
+  <link rel="Icon" type="png" href='/assets/img/icono.jpg'>
   <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/sign-in/">
   <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Scripts firebase -->
-  <script src="../../controllers/registro.js"></script>
-  <script src="/RF-PHP/controllers/authblock.js"></script> <!-- Incluye el archivo auth.js -->
+  <script src="../controllers/registro.js"></script>
+  <script src="../controllers/authblock.js"></script> <!-- Incluye el archivo auth.js -->
   <script>
     // Verifica la autenticación cuando la página carga
     verificarAutenticacionBlock();

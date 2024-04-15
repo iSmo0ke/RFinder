@@ -9,8 +9,8 @@ include '../includes/header.php';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Route Finder</title>
-    <link rel="Icon" type="png" href='img/ico.jpg'>
-    <script src='/RF-PHP/controllers/auth.js'></script>
+    <link rel="Icon" type="png" href='/assets/img/ico.jpg'>
+    <script src='../controllers/auth.js'></script>
     <script>verificarAutenticacion();</script>
     <!-- Agregar Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -77,7 +77,7 @@ include '../includes/header.php';
     </script>
     <script>
         document.getElementById('downloadButton').addEventListener('click', function () {
-            window.location.href = '/RF-PHP/Route Finder.apk';
+            window.location.href = '../Route Finder.apk';
         });
     </script>
 

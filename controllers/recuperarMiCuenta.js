@@ -11,7 +11,7 @@ function enviarCorreoRestablecerContraseña() {
                 // Cerrar sesión después de enviar el correo electrónico
                 firebase.auth().signOut().then(function() {
                     // Redirigir a la página de inicio de sesión
-                    window.location.href = '/RF-PHP/public/index.php';
+                    window.location.href = '/index.php';
                 }).catch(function(error) {
                     // Error al cerrar sesión
                     console.error("Error al cerrar sesión:", error);

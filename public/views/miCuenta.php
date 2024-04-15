@@ -14,9 +14,9 @@ include '../includes/header.php';
     <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-firestore.js"></script>
-    <script src="../../controllers/login.js"></script>
-    <script src='/RF-PHP/controllers/auth.js'></script>
-    <script src='/RF-PHP/controllers/miCuenta.js'></script>
+    <script src="../controllers/login.js"></script>
+    <script src='../controllers/auth.js'></script>
+    <script src='../controllers/miCuenta.js'></script>
     <script>verificarAutenticacion();</script>
 
     
@@ -45,7 +45,7 @@ include '../includes/header.php';
         </div>
     </div>
 </body>
-<script src='/RF-PHP/controllers/recuperarMiCuenta.js'></script>
+<script src='../controllers/recuperarMiCuenta.js'></script>
 
 </html>
 

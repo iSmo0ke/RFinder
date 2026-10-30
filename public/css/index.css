@@ -1,51 +1,91 @@
-html{
+html {
     scroll-behavior: smooth;
 }
 
-.descripcionTxt{
-    padding: 0;
-    width: 550px;
-    height: 180px;
-    text-align: start;
-}
-
-.fichaTxt{
-    background-color: #ffff;
-    border: 2px solid black;
-    border-radius: 5px; 
-    width: 350px;
-    height: 180px;
-    text-align: center;
+/* =========================================
+   Sección Hero (Imagen Principal)
+========================================= */
+.hero-section {
+    background-image: url('/assets/img/index.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: calc(100vh - 76px); /* Altura de la pantalla menos el nav */
+    display: flex;
     align-items: center;
-    flex-wrap: wrap;
-    display:inline-table;
-    justify-content: center;
-    /* margin: 4%; */
+    width: 100%;
 }
 
-.titulo{
-    font-size: 100px;
+.titulo {
+    font-size: clamp(3rem, 8vw, 90px); /* Responsivo automático */
     font-family: 'Roboto', sans-serif;
-    margin-top: 30%;
+    font-weight: 800;
+    color: #212529;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(255,255,255,0.7);
 }
 
-
-.subTitulo{
+.subTitulo {
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
 }
 
-.texto{
-    font-size: 20px;
+.texto-container {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 30px 40px;
+    border-radius: 12px;
+    max-width: 750px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    border-left: 5px solid #007bff;
+}
+
+.texto {
+    font-size: 1.15rem;
+    color: #495057;
     font-family: 'RobotoSub', sans-serif;
+    margin: 0;
+    line-height: 1.7;
 }
 
-.cardsContenedor{
-    background-color: #ffff;
-    padding: 0;
-    width: 1950px;
-    height:100%;
+/* =========================================
+   Sección de Tarjetas (Cómo funciona)
+========================================= */
+.cardsContenedor {
+    padding: 80px 0;
+}
+
+.cardsContenedor h2 {
+    margin-bottom: 50px;
+    font-weight: 700;
+    color: #343a40;
+}
+
+.fichaTxt {
+    background-color: #ffffff;
+    padding: 35px 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    height: 100%;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.05);
+    
+    /* Centrado de contenido usando Flexbox en lugar de inline-table */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin-top: 7%;
 }
 
+.fichaTxt:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.fichaTxt h3 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    color: #007bff;
+    font-weight: 600;
+}
